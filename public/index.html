@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Livros</title>
+    <style>
+        #book-form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #book-form label {
+            margin-bottom: 10px;
+        }
+
+        #book-form input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #book-form button {
+            padding: 8px 16px;
+            background-color: #A569BD;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #book-form button:hover {
+            background-color: #A569BD;
+        }
+        #book-details {
+            margin-top: 20px;
+        }
+
+        #book-details h2 {
+            margin-top: 0;
+        }
+
+        #book-details p {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="book-form">
+        <label for="book-id">ID do Livro:</label>
+        <input type="text" id="book-id" name="book-id">
+        <button type="submit">Consultar Livro</button>
+    </form>
+    <div id="book-details">
+        <h2 id="book-title"></h2>
+        <p id="book-author"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
